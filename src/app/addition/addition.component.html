@@ -1,0 +1,26 @@
+<form>
+    <h1>Addition</h1>
+   
+    <div>
+      <label>Number 1</label>
+      <input type="text" name="num1" [(ngModel)]="num1" class="form-control" placeholder="Enter Num1">
+    </div>
+  
+    <div>
+      <label>Number 2</label>
+      <input type="text" name="num2" [(ngModel)]="num2" class="form-control" placeholder="Enter Num2">
+    </div>
+
+    <div>
+        <label>Number 3</label>
+        <input type="text" name="num3" [(ngModel)]="num3" class="form-control" placeholder="Enter Num3">
+      </div>
+  
+    <div>
+      <label>Total </label>
+      <input class="form-control" placeholder="Total" value="{{result}}">
+    </div>
+  
+    <button (click)="Total()" class="btn btn-primary mt-4" >Submit</button>
+  
+  </form>
